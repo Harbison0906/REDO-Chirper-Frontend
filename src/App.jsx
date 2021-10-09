@@ -1,30 +1,40 @@
-import React, { useState, useEffect }from 'react';
+import React, { useState, useEffect } from 'react';
+import { BiAt } from "react-icons/bi";
 
-const chirps = [
-  {
-    username: "@I_Am_Bennett",
-    chirp: "It just goes to show..."
-  },
-  {
-    username: "@Michael_Scarn45",
-    chirp: "I want people to be afraid of how much they love me."
-  },
-  {
-    username: "@Tommy_Hav",
-    chirp: "I have never taken the high road, but I tell other people to ’cause then there’s more room for me on the low road."
-  }
-]
+
 
 const App = () => {
 
-  const [chirp, setChirp] = useState([])
+  const [chirp, setChirp] = useState()
 
 
-  
+
   return (
     <>
-      <h1>App Component</h1>
-      
+      <h1 className="m-3 mb-5 text-center">Chirper</h1>
+      <section>
+        
+        <div className="card bg-light shadow mb-3 mx-auto">
+          <div className="card-header"><BiAt/>I_Am_Bennett</div>
+          <div className="card-body">
+            <p>It just goes to show...</p>
+          </div>
+        </div>
+        <div className="card bg-light shadow mb-3 mx-auto">
+          <div className="card-header"><BiAt/>Mike_Scarn45</div>
+          <div className="card-body">
+            <p>I want people to be afraid of how much they love me.</p>
+          </div>
+        </div>
+        <div className="card bg-light shadow mb-3 mx-auto">
+          <div className="card-header"><BiAt/>TommyTommyHavHav</div>
+          <div className="card-body">
+            <p>At the risk of bragging, one of the things I’m best at is riding coattails. Behind every successful man is me. Smiling and taking partial credit.</p>
+          </div>
+        </div>
+      </section>
+
+
     </>
   )
 }
