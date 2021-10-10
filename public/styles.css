@@ -1,8 +1,16 @@
 body {
-background-color: cyan;
+background-color: lightgray;
 }
 
+#chirp-form {
+  width: 50%;
+}
 
+hr{
+  height: 1px;
+  background-color: black;
+  border: none;
+}
 
 .card {
   width: 50%;
