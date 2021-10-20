@@ -7,14 +7,14 @@ const App = () => {
 
   const [username, setUsername] = useState('')
   const [message, setMessage] = useState('')
-  const [chirp, setChirp] = useState([])
 
   const addChirp = (e) => {
     e.preventDefault();
-    const newChirp = setChirp.slice();
-    newChirp.unshift(message);
-    setChirp(newChirp);
-    setMessage('');
+    console.log('test');
+    // const newChirp = setChirp.slice();
+    // newChirp.unshift(message);
+    // setChirp(newChirp);
+    // setMessage('');
   }
 
 
@@ -22,20 +22,21 @@ const App = () => {
     <>
       <h1 className="m-3 mb-5 text-center">Chirper<GiHummingbird className="mx-2" /></h1>
 
-      <section className="border-rounded shadow mb-5 mx-auto" id="chirp-form">
-        <div className="input-group">
+      <section className="mb-5 mx-auto" id="chirp-form">
+        <div className="input-group mb-2 shadow">
           <div className="input-group-prepend">
             <span className="input-group-text" id="basic-addon1">@</span>
           </div>
           <input type="text" className="form-control" placeholder="Username" aria-label="Username" />
         </div>
 
-        <div className="input-group">
+        <div className="input-group shadow">
           <div className="input-group-prepend">
             <span className="input-group-text">What's on your mind?</span>
           </div>
           <textarea className="form-control" aria-label="With textarea"></textarea>
         </div>
+        <button className="btn btn-primary mt-2 shadow" onClick= {addChirp}>Chirp It</button>
       </section>
 <hr></hr>
       <section>

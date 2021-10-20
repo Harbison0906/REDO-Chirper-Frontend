@@ -4,12 +4,16 @@ background-color: lightgray;
 
 #chirp-form {
   width: 50%;
+  background-color: lightgray;
+
 }
 
 hr{
   height: 1px;
   background-color: black;
   border: none;
+  width: 75%;
+
 }
 
 .card {
